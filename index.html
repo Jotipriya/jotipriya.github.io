@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Home | Jotipriya Das</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jotipriya Das | Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Welcome to Jotipriya Das' Website</h1>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
+      <ul class="navbar">
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About Me</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="resume.html">Resume</a></li>
@@ -20,13 +20,18 @@
     </nav>
   </header>
 
-  <main>
-    <p>Hello! I am Jotipriya Das, an MSc Data Science student.</p>
-    <p>This is my personal portfolio website.</p>
-  </main>
+  <section class="home">
+    <div class="intro">
+      <img src="images/1000170930.jpg" alt="Jotipriya Das" class="profile-img">
+      <div class="intro-text">
+        <h1>Hello, I'm <span class="highlight">Jotipriya Das</span></h1>
+        <p>
+          I'm a passionate Data Scientist from Barasat, West Bengal. With a strong academic background in Mathematics and Data Science, and a love for both cricket and creativity, I blend logic and imagination in every project I take on. Currently beginning a new chapter as a PhD student at IIT Palakkad, I’m excited about contributing to the world through data.
+        </p>
+      </div>
+    </div>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 Jotipriya Das</p>
-  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
