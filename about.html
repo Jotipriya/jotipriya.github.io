@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About Me | Jotipriya Das</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>About Me</h1>
     <nav>
-      <ul>
+      <ul class="navbar">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
+        <li><a href="about.html" class="active">About Me</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="resume.html">Resume</a></li>
         <li><a href="skills.html">Skills</a></li>
@@ -20,14 +20,48 @@
     </nav>
   </header>
 
-  <main>
-    <h2>Hello, I'm Jotipriya!</h2>
-    <p>I am currently pursuing MSc in Data Science at Kalyani University...</p>
-    <!-- Add more details -->
-  </main>
+  <section class="about">
+    <div class="container">
+      <h1>About Me</h1>
+      <p>Hello! I’m <strong>Jotipriya Das</strong> from Barasat, West Bengal — born in Katwa and brought up in Barasat. I’m a passionate learner, researcher, and sports enthusiast with a deep love for mathematics and data science.</p>
+      
+      <h2>🎓 Educational Background</h2>
+      <ul class="timeline">
+        <li>
+          <strong>10th (Madhyamik)</strong><br>
+          Ramakrishna Vivekananda Mission Vidyabhavan, Barrackpore<br>
+          West Bengal Board of Secondary Education<br>
+          <em>Score: 79.28%</em>
+        </li>
+        <li>
+          <strong>12th (Higher Secondary)</strong><br>
+          Purba Barasat Adarsha Bidyapeeth, Barasat<br>
+          West Bengal Council of Higher Secondary Education<br>
+          <em>Score: 84% (Full marks in Mathematics)</em>
+        </li>
+        <li>
+          <strong>B.Sc. in Mathematics</strong><br>
+          Presidency University, Kolkata<br>
+          <em>Got selected in both Jadavpur and Presidency</em><br>
+          "Beautiful white buildings, cultural nights, Presi Greens, Derozio Hall, Milieu" — unforgettable memories!
+        </li>
+        <li>
+          <strong>M.Sc. in Data Science</strong><br>
+          University of Kalyani<br>
+          <em>New people, new place, new bond — and a life-changing phase</em>
+        </li>
+        <li>
+          <strong>PhD (Offer)</strong><br>
+          Indian Institute of Technology (IIT) Palakkad, Kerala<br>
+          <em>Embarking on a new journey soon!</em>
+        </li>
+      </ul>
 
-  <footer>
-    <p>&copy; 2025 Akash Das</p>
-  </footer>
+      <h2>🏏 Interests & Hobbies</h2>
+      <p>I was a <strong>professional cricketer</strong> in my teenage years, and I still enjoy playing cricket, football, volleyball, and carrom. I also play the guitar and love immersing myself in music when I’m not studying or coding!</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
