@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projects | Jotipriya Das</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Projects</h1>
     <nav>
-      <ul>
+      <ul class="navbar">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Me</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
         <li><a href="resume.html">Resume</a></li>
         <li><a href="skills.html">Skills</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -20,17 +20,61 @@
     </nav>
   </header>
 
-<main>
-  <h2>My Projects</h2>
-  <ul>
-    <li>📌 Privacy Preserving Vertical Federated Learning</li>
-    <li>📌 Regensburg Pediatric Appendicitis Multi-Class Model</li>
-  </ul>
-</main>
+  <section class="projects">
+    <div class="container">
+      <h1>My Projects & Case Studies</h1>
+
+      <div class="project-card">
+        <h2>🛡️ Privacy-Preserving Vertical Federated Learning</h2>
+        <p>Designed a heart disease prediction framework using Vertical Federated Learning integrated with Zero Knowledge Proof and Differential Privacy.</p>
+        <span class="tech">Federated Learning, ZKP, DP, Logistic Regression</span>
+      </div>
+
+      <div class="project-card">
+        <h2>🧠 Multi-Category Image Classification (CNN)</h2>
+        <p>Built a CNN model with skip connections for classifying multiple image categories. Analyzed performance across different architectures.</p>
+        <span class="tech">Python, Keras, CNN, Deep Learning</span>
+      </div>
+
+      <div class="project-card">
+        <h2>🧪 Regensburg Pediatric Appendicitis Multi-Class Model</h2>
+        <p>Developed a machine learning model to predict <strong>Diagnosis</strong>, <strong>Management</strong>, and <strong>Severity</strong> simultaneously using a multi-output classifier on the Regensburg Pediatric Appendicitis dataset.</p>
+        <span class="tech">Random Forest, XGBoost, VotingClassifer, Multi-Output Classification, Scikit-learn</span>
+      </div>
 
 
-  <footer>
-    <p>&copy; 2025 Jotipriya Das</p>
-  </footer>
+      <div class="project-card">
+        <h2>📊 Descriptive Analysis of Wrangled Data</h2>
+        <p>Cleaned, visualized, and statistically analyzed customer and sales data. Focused on encoding techniques, handling missing values, and deriving insights.</p>
+        <span class="tech">Pandas, Matplotlib, Seaborn, EDA</span>
+      </div>
+
+      <div class="project-card">
+        <h2>🎵 Music Genre Classification</h2>
+        <p>Trained models to predict music genres and listener moods using audio features like pitch, tempo, and rhythm.</p>
+        <span class="tech">Random Forest, SVM, Neural Networks</span>
+      </div>
+
+      <div class="project-card">
+        <h2>📞 Telecom Churn Prediction</h2>
+        <p>Built churn models using customer behavior data to identify high-risk customers and key churn indicators.</p>
+        <span class="tech">Logistic Regression, Scikit-learn, Pandas</span>
+      </div>
+
+      <div class="project-card">
+        <h2>💳 Credit Risk Analysis</h2>
+        <p>Analyzed loan dataset to identify key risk factors and customer trends. Visualized insights to support credit decision-making.</p>
+        <span class="tech">Python, Data Analysis, Visualization</span>
+      </div>
+
+      <div class="project-card">
+        <h2>✈️ NYC Flight Dataset Analysis</h2>
+        <p>Performed EDA and regression analysis on NYC flight data using R. Studied impact of weather and delays with time series techniques.</p>
+        <span class="tech">R, ggplot2, dplyr, Time Series</span>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
