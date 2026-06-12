@@ -45,10 +45,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 const quotes = [
   "Teaching AI to say 'I don't know' is surprisingly difficult.",
-  "Every great model starts with clean data.",
-  "Debugging: where 5 minutes of coding becomes 2 hours of detective work.",
-  "Research is turning coffee into conference papers.",
-  "Behind every successful experiment are at least ten unsuccessful ones."
+  "Research is turning curiosity into conference papers.",
+  "Every dataset has a story. Some just need more cleaning first.",
+  "Behind every successful experiment are at least ten that didn't work.",
+  "Debugging: the art of solving a problem you accidentally created.",
+  "Good models predict. Great models know when they might be wrong.",
+  "Coffee helps. Clean data helps even more."
 ];
 
 const quoteElement = document.getElementById("quote");
