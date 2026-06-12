@@ -1,20 +1,21 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projects | Jotipriya Das</title>
+  <title>Research & Projects | Jotipriya Das</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <header>
     <nav>
       <ul class="navbar">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Me</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="projects.html" class="active">Research & Projects</a></li>
         <li><a href="resume.html">Resume</a></li>
-        <li><a href="skills.html">Skills</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -22,59 +23,134 @@
 
   <section class="projects">
     <div class="container">
-      <h1>My Projects & Case Studies</h1>
 
+      <h1>🔬 Research & Selected Projects</h1>
+
+      <p style="text-align:center;">
+        A collection of research, machine learning projects, and experiments
+        that taught me one important lesson:
+        <em>the model is usually innocent until proven guilty by the data.</em>
+      </p>
+
+      <!-- Publication -->
+      <div class="project-card">
+        <h2>📄 ECML PKDD 2026 Publication</h2>
+
+        <p>
+          <strong>
+            Going Beyond Explainability: Learning Justifiable Vision
+            Transformers Guided by Flow Matching
+          </strong>
+        </p>
+
+        <p>
+          Authors: Thomas John, Akshay Krishna,
+          <strong>Jotipriya Das</strong>, Mrinal Das
+        </p>
+
+        <p>
+          Published at <strong>ECML PKDD 2026</strong>.
+          The work explores learning vision transformers that are not only
+          accurate but also provide more justifiable reasoning by leveraging
+          flow matching techniques.
+        </p>
+
+        <span class="tech">
+          Explainable AI • Vision Transformers • Flow Matching • Deep Learning
+        </span>
+      </div>
+
+      <!-- Current Research -->
+      <div class="project-card">
+        <h2>🌍 Current PhD Research</h2>
+
+        <p>
+          Developing methods for
+          <strong>Uncertainty Quantification in Seismic Velocity Estimation</strong>
+          using Flow Matching Models, with the goal of producing predictions
+          together with reliable confidence estimates.
+        </p>
+
+        <span class="tech">
+          Flow Matching • Uncertainty Quantification • Scientific ML
+        </span>
+      </div>
+
+      <!-- VFL -->
       <div class="project-card">
         <h2>🛡️ Privacy-Preserving Vertical Federated Learning</h2>
-        <p>Designed a heart disease prediction framework using Vertical Federated Learning integrated with Zero Knowledge Proof and Differential Privacy.</p>
-        <span class="tech">Federated Learning, ZKP, DP, Logistic Regression</span>
+
+        <p>
+          Designed a heart disease prediction framework combining Vertical
+          Federated Learning with Zero-Knowledge Proofs and Differential
+          Privacy to enable collaborative learning without exposing sensitive
+          data.
+        </p>
+
+        <span class="tech">
+          Federated Learning • Zero-Knowledge Proofs • Differential Privacy
+        </span>
       </div>
 
+      <!-- Appendicitis -->
       <div class="project-card">
-        <h2>🧠 Multi-Category Image Classification (CNN)</h2>
-        <p>Built a CNN model with skip connections for classifying multiple image categories. Analyzed performance across different architectures.</p>
-        <span class="tech">Python, Keras, CNN, Deep Learning</span>
+        <h2>🧪 Pediatric Appendicitis Prediction</h2>
+
+        <p>
+          Built a multi-output machine learning system capable of predicting
+          diagnosis, management strategy, and severity simultaneously using the
+          Regensburg Pediatric Appendicitis dataset.
+        </p>
+
+        <span class="tech">
+          Random Forest • XGBoost • Multi-Output Learning
+        </span>
       </div>
 
+      <!-- CNN -->
       <div class="project-card">
-        <h2>🧪 Regensburg Pediatric Appendicitis Multi-Class Model</h2>
-        <p>Developed a machine learning model to predict <strong>Diagnosis</strong>, <strong>Management</strong>, and <strong>Severity</strong> simultaneously using a multi-output classifier on the Regensburg Pediatric Appendicitis dataset.</p>
-        <span class="tech">Random Forest, XGBoost, VotingClassifer, Multi-Output Classification, Scikit-learn</span>
+        <h2>🧠 Multi-Category Image Classification</h2>
+
+        <p>
+          Developed convolutional neural network models with skip connections
+          and evaluated different architectures for robust image
+          classification.
+        </p>
+
+        <span class="tech">
+          CNN • TensorFlow • Keras • Computer Vision
+        </span>
       </div>
 
-
-      <div class="project-card">
-        <h2>📊 Descriptive Analysis of Wrangled Data</h2>
-        <p>Cleaned, visualized, and statistically analyzed customer and sales data. Focused on encoding techniques, handling missing values, and deriving insights.</p>
-        <span class="tech">Pandas, Matplotlib, Seaborn, EDA</span>
-      </div>
-
+      <!-- Music -->
       <div class="project-card">
         <h2>🎵 Music Genre Classification</h2>
-        <p>Trained models to predict music genres and listener moods using audio features like pitch, tempo, and rhythm.</p>
-        <span class="tech">Random Forest, SVM, Neural Networks</span>
+
+        <p>
+          Trained machine learning models to recognize music genres from audio
+          features and explored how machines can learn patterns that humans
+          simply call “good taste.”
+        </p>
+
+        <span class="tech">
+          Audio Processing • Random Forest • SVM • Machine Learning
+        </span>
       </div>
 
-      <div class="project-card">
-        <h2>📞 Telecom Churn Prediction</h2>
-        <p>Built churn models using customer behavior data to identify high-risk customers and key churn indicators.</p>
-        <span class="tech">Logistic Regression, Scikit-learn, Pandas</span>
+      <div style="margin-top:40px; text-align:center; color:#666;">
+        <em>
+          Side quests have included telecom analytics, credit risk modelling,
+          exploratory data analysis, and flight data studies. Every project
+          taught me something new—especially that data cleaning is rarely as
+          exciting as conference acceptance emails.
+        </em>
       </div>
 
-      <div class="project-card">
-        <h2>💳 Credit Risk Analysis</h2>
-        <p>Analyzed loan dataset to identify key risk factors and customer trends. Visualized insights to support credit decision-making.</p>
-        <span class="tech">Python, Data Analysis, Visualization</span>
-      </div>
-
-      <div class="project-card">
-        <h2>✈️ NYC Flight Dataset Analysis</h2>
-        <p>Performed EDA and regression analysis on NYC flight data using R. Studied impact of weather and delays with time series techniques.</p>
-        <span class="tech">R, ggplot2, dplyr, Time Series</span>
-      </div>
     </div>
   </section>
 
   <script src="script.js"></script>
+
 </body>
 </html>
+```
