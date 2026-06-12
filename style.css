@@ -312,3 +312,165 @@ body {
 .social-links li {
   margin-bottom: 10px;
 }
+
+```css
+/* =======================================================
+   Global Improvements
+   ======================================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f8fafc;
+  color: #222;
+  line-height: 1.7;
+}
+
+/* Better text selection */
+::selection {
+  background: #00bcd4;
+  color: white;
+}
+
+/* =======================================================
+   Navigation
+   ======================================================= */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #1f2937;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.navbar a {
+  transition: color 0.25s ease;
+}
+
+/* =======================================================
+   Containers
+   ======================================================= */
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* =======================================================
+   Cards
+   ======================================================= */
+
+.project-card,
+.card,
+.about .container,
+.resume .container,
+.contact .container {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.project-card:hover,
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* =======================================================
+   Buttons
+   ======================================================= */
+
+.btn,
+.download-btn {
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.btn:hover,
+.download-btn:hover {
+  transform: scale(1.04);
+}
+
+/* =======================================================
+   Current Research Section
+   ======================================================= */
+
+.current-work {
+  max-width: 950px;
+  margin: 50px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.08);
+}
+
+.current-work h2 {
+  color: #00bcd4;
+  text-align: center;
+}
+
+.current-work blockquote {
+  margin-top: 20px;
+  padding: 15px 20px;
+  background: #eefbfd;
+  border-left: 5px solid #00bcd4;
+  font-style: italic;
+  border-radius: 8px;
+}
+
+/* =======================================================
+   Lists
+   ======================================================= */
+
+ul li {
+  margin-bottom: 8px;
+}
+
+/* =======================================================
+   Footer
+   ======================================================= */
+
+footer {
+  margin-top: 60px;
+  padding: 30px 20px;
+  text-align: center;
+  color: #666;
+  font-size: 0.95rem;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* =======================================================
+   Responsive Design
+   ======================================================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar li {
+    margin: 8px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .card-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card,
+  .card {
+    width: 100%;
+  }
+}
+```
+
