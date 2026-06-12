@@ -1,117 +1,154 @@
 ```html
-<header>
-  <nav>
-    <ul class="navbar">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about.html">About Me</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+<body>
 
-<section class="hero">
-  <img src="1000170930.jpg" alt="Jotipriya Das" />
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <h1>Hello, I'm <span>Jotipriya Das</span> 👋</h1>
-  <h2 id="typed-text" class="animated-text"></h2>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container" style="text-align:center; box-shadow:none; background:none;">
 
-  <p>
-    Welcome! I'm a PhD researcher in Data Science at IIT Palakkad with a
-    background in Mathematics and Machine Learning. I enjoy building reliable AI
-    systems, exploring uncertainty quantification, and solving problems where
-    mathematics meets real-world applications.
-  </p>
+      <img
+        src="1000170930.jpg"
+        alt="Jotipriya Das"
+        style="width:180px;height:180px;border-radius:50%;border:5px solid #00bcd4;object-fit:cover;"
+      >
 
-  <p>
-    When I'm not reading research papers or running experiments, you'll probably
-    find me playing cricket, strumming my guitar, or trying to understand why a
-    model that worked perfectly yesterday suddenly believes in chaos today.
-  </p>
+      <h1 style="margin-top:25px;">
+        Hello, I'm <span style="color:#00bcd4;">Jotipriya Das</span> 👋
+      </h1>
 
-  <div class="cta-buttons">
-    <a href="projects.html" class="btn">🚀 Explore My Work</a>
-    <a href="resume.html" class="btn">📄 View Resume</a>
-  </div>
-</section>
+      <h2
+        id="typed-text"
+        style="color:#00bcd4; min-height:35px;"
+      ></h2>
 
-<section class="card-section">
-  <div class="card">
-    <h3>📘 About</h3>
-    <p>The story behind the researcher.</p>
-    <a href="about.html">Read More →</a>
-  </div>
+      <p style="max-width:760px; margin:auto;">
+        I'm a PhD researcher in Data Science at IIT Palakkad with a background
+        in Mathematics and Machine Learning. My work focuses on trustworthy AI,
+        uncertainty quantification, and building models that know when they
+        might be wrong.
+      </p>
 
-  <div class="card">
-    <h3>💼 Projects</h3>
-    <p>Research, experiments, and ideas brought to life.</p>
-    <a href="projects.html">Explore →</a>
-  </div>
-</section>
+      <p style="max-width:760px; margin:20px auto;">
+        When I'm away from research, you'll probably find me playing cricket,
+        strumming my guitar, or debugging code that was absolutely working
+        five minutes ago.
+      </p>
 
-<section class="current-work">
-  <div class="container">
-    <h2>🔬 What I'm Researching Right Now</h2>
+      <div style="margin-top:30px;">
+        <a href="projects.html" class="btn">🚀 Explore Projects</a>
+        <a href="resume.html" class="btn">📄 View CV</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Quick Navigation -->
+  <section class="card-section">
+
+    <div class="card">
+      <h3>📘 About Me</h3>
+      <p>
+        My journey from mathematics to machine learning, with a few cricket
+        matches and guitars along the way.
+      </p>
+      <a href="about.html">Read More →</a>
+    </div>
+
+    <div class="card">
+      <h3>💼 Research & Projects</h3>
+      <p>
+        Publications, research, and selected projects in AI, deep learning,
+        and scientific computing.
+      </p>
+      <a href="projects.html">Explore →</a>
+    </div>
+
+  </section>
+
+  <!-- Current Research -->
+  <section class="current-work">
+    <h2>🔬 Current Research</h2>
 
     <p>
-      My current work focuses on <strong>Uncertainty Quantification for Seismic
-      Velocity Estimation using Flow Matching Models</strong>. In simple terms,
-      I'm trying to make AI models that not only make predictions but also know
-      when they might be wrong.
+      I'm currently working on
+      <strong>
+        Uncertainty Quantification for Seismic Velocity Estimation using
+        Flow Matching Models
+      </strong>.
+      The goal is to develop AI systems that not only make predictions but also
+      communicate how confident they are in those predictions.
     </p>
 
     <blockquote>
-      “One of my research goals is to teach AI a sentence that humans rarely say:
-      <em>I don't know.</em>”
+      “Teaching AI to say <em>I don't know</em> is surprisingly harder than
+      teaching it to predict.”
     </blockquote>
-  </div>
-</section>
+  </section>
 
-<section style="text-align:center; margin:50px 20px; color:#666;">
-  <p>
-    <em>
-      Fun fact: I've spent more time debugging missing commas than writing this
-      website.
-    </em>
-  </p>
-</section>
-<footer style="text-align:center; padding:30px 20px; color:#666; border-top:1px solid #e5e5e5; margin-top:50px;">
-  <p id="quote"></p>
-  <p style="margin-top:12px; font-size:0.9rem;">
-    © 2026 Jotipriya Das • Built with HTML, CSS, JavaScript, curiosity, and occasional debugging adventures.
-  </p>
-</footer>
-<script>
-  const roles = [
-    "PhD Researcher",
-    "Machine Learning Enthusiast",
-    "Mathematics Lover",
-    "Trying to Make AI More Honest",
-    "Professional Bug Hunter 🐞"
-  ];
+  <!-- Footer -->
+  <footer>
+    <p id="quote"></p>
 
-  let i = 0, j = 0, current = "", isDeleting = false;
-  const element = document.getElementById("typed-text");
+    <p style="margin-top:10px;font-size:0.9rem;">
+      © 2026 Jotipriya Das • Built with HTML, CSS, JavaScript,
+      curiosity, and a healthy respect for semicolons.
+    </p>
+  </footer>
 
-  function type() {
-    current = roles[i];
-    element.innerHTML = isDeleting
-      ? current.substring(0, j--)
-      : current.substring(0, j++);
+  <!-- Typing Animation -->
+  <script>
+    const roles = [
+      "PhD Researcher",
+      "Machine Learning Enthusiast",
+      "Mathematics Lover",
+      "Teaching AI When to Say 'I Don't Know'",
+      "Occasional Bug Creator, Reluctant Bug Fixer 🐞"
+    ];
 
-    if (!isDeleting && j === current.length) {
-      isDeleting = true;
-      setTimeout(type, 1400);
-    } else if (isDeleting && j === 0) {
-      isDeleting = false;
-      i = (i + 1) % roles.length;
-      setTimeout(type, 300);
-    } else {
-      setTimeout(type, isDeleting ? 50 : 90);
+    let i = 0;
+    let j = 0;
+    let current = "";
+    let isDeleting = false;
+
+    const element = document.getElementById("typed-text");
+
+    function type() {
+      current = roles[i];
+
+      element.textContent = isDeleting
+        ? current.substring(0, j--)
+        : current.substring(0, j++);
+
+      if (!isDeleting && j > current.length) {
+        isDeleting = true;
+        setTimeout(type, 1500);
+        return;
+      }
+
+      if (isDeleting && j < 0) {
+        isDeleting = false;
+        i = (i + 1) % roles.length;
+        j = 0;
+      }
+
+      setTimeout(type, isDeleting ? 45 : 80);
     }
-  }
 
-  type();
-</script>
+    type();
+  </script>
+
+  <script src="script.js"></script>
+
+</body>
 ```
